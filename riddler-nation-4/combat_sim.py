@@ -99,7 +99,7 @@ def gen_random_submission():
     total_points = 100
     for i in range(9):
         # val = random.randrange(0, min(3 * (i + 1), total_points))
-        val = random.randrange(0, min(25, total_points))
+        val = random.randrange(min(5, total_points), min(15, total_points))
         total_points -= val
         submission.append(val)
     submission.append(total_points)
